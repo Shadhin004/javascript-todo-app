@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Todo App</h1>
+
+    <form id="todo-search-form" onsubmit="event.preventDefault()">
+        <input type="text" placeholder="Enter your Todo task" id="todo-search-box"/>
+        <button type="submit" id="todo-search-button">Search</button>
+        <button type="submit" id="todo-reset-button">Reset</button>
+    </form>
+    <form id="todo-submit-form" onsubmit="event.preventDefault()">
+        <input type="text" placeholder="Enter your Todo task" id="todo-input-box"/>
+        <button type="submit" id="todo-input-button">Add</button>
+        <p id="alert-message"></p>
+    </form>
+
+    <div id="todo-container"></div>
+    <div id="todo-counter"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
